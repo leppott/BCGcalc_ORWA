@@ -1,0 +1,29 @@
+---
+title: "BCGcalc_ORWA-NEWS"
+author: "Erik.Leppo@tetratech.com"
+date: "`r Sys.time()`"
+output: github_document
+  #md_document:
+   # variant: markdown_github
+---
+
+<!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "NEWS-"
+)
+```
+
+```{r, echo = FALSE}
+cat(paste0("Last Update: ",Sys.time()))
+```
+
+# BCGcalc 2.2.0 (2026-07-06)
+
+* Created GitHub repository BCGcalc_ORWA
+* Transfer ORWA BCG Shiny app from BCGcalc to BCGcalc_ORWA
+* docs: Update README
+* Create issue templates on GitHub

@@ -1,0 +1,99 @@
+BCGcalc_ORWA-README
+================
+<Erik.Leppo@tetratech.com>
+2026-07-06 14:58:51.913168
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+    #> Last Update: 2026-07-06 14:58:51.936072
+
+# Shiny App for Oregon and Washing for BCGcalc Biological Condition Gradient (BCG) calculator.
+
+## Badges
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/leppott/BCGcalc_ORWA/graphs/commit-activity)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
+[![GitHub
+license](https://img.shields.io/github/license/leppott/BCGcalc_ORWA.svg)](https://github.com/leppott/BCGcalc_ORWA/blob/master/LICENSE)
+
+[![CodeFactor](https://www.codefactor.io/repository/github/leppott/BCGcalc_ORWA/badge)](https://www.codefactor.io/repository/github/leppott/BCGcalc_ORWA)
+[![codecov](https://codecov.io/gh/leppott/BCGcalc_ORWA/branch/master/graph/badge.svg)](https://codecov.io/gh/leppott/BCGcalc_ORWA)
+[![R-CMD-check](https://github.com/leppott/BCGcalc_ORWA/workflows/R-CMD-check/badge.svg)](https://github.com/leppott/BCGcalc_ORWA/actions)
+
+[![GitHub
+issues](https://img.shields.io/github/issues/leppott/BCGcalc_ORWA.svg)](https://GitHub.com/leppott/BCGcalc_ORWA/issues/)
+
+[![GitHub
+release](https://img.shields.io/github/release/leppott/BCGcalc_ORWA.svg)](https://GitHub.com/leppott/BCGcalc_ORWA/releases/)
+[![Github all
+releases](https://img.shields.io/github/downloads/leppott/BCGcalc_ORWA/total.svg)](https://GitHub.com/leppott/BCGcalc_ORWA/releases/)
+
+## Installation
+
+To install the current version use the code below to install from
+GitHub. The use of “force = TRUE” ensures the package is installed even
+if already present. If the package `remotes` is missing the code below
+will install it.
+
+``` r
+if(!require(remotes)){install.packages("remotes")}  #install if needed
+install_github("leppott/BCGcalc_ORWA", force=TRUE)
+```
+
+The vignette (big help file) isn’t created when installing from GitHub
+with the basic `install_github` command. If you want the vignette
+install with the code below.
+
+``` r
+if(!require(remotes)){install.packages("remotes")}  #install if needed
+install_github("leppott/BCGcalc_ORWA", force=TRUE, build_vignettes=TRUE)
+```
+
+All dependent libraries should install with the install_github command
+but occassionally they do not. If you encounter issues the dependent
+libraries can be installed separately with the command below.
+
+``` r
+# Choose a CRAN mirror (dowload site) first (can change number)
+chooseCRANmirror(ind=21) 
+# libraries to be installed
+data.packages = c(                  
+                  "devtools"        # install helper for non CRAN libraries
+                  ,"installr"       # install helper
+                  ,"knitr"          # create documents in other formats (e.g., PDF or Word)
+                  ,"dplyr"          # summary stats
+                  ,"reshape2"       # convert wide to long format
+                  ,"rmarkdown"      # a dependency that is sometimes missed.
+                  ,"readxl"         # for importing Excel data
+                  )
+                  
+lapply(data.packages,function(x) install.packages(x))
+```
+
+Additionally Pandoc is required for creating the reports and (sometimes)
+needs to be installed separately. Pandoc is installed with RStudio so if
+you have RStudio you already have Pandoc on your computer. Install
+directions are included below.
+
+``` r
+## pandoc
+#install.packages("installr")
+library(installr)
+install.pandoc()
+```
+
+## Purpose
+
+To aid users in data tasks related to the Biological Condition Gradient
+for the Pacific Northwest.
+
+## Shiny
+
+The Shiny app code is included in this package but is also on the web.
+
+<https://tetratech-wtr-wne.shinyapps.io/BCGcalc/>
+
+## Help
+
+Contact developers directly or creating an issue on this repository.
