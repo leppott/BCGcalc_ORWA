@@ -21,6 +21,13 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9001 (2026-07-07)
+
+* refactor: Update Assign Index Name/Class text on File Builder section of Shiny
+app
+    + Replace text
+    + Add ORWA_Statewide_BCGclasses_20260706.xlsx as a download
+
 # BCGcalc 2.2.0 (2026-07-06)
 
 * Created GitHub repository BCGcalc_ORWA
