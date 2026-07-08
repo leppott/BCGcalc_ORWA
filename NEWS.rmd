@@ -21,6 +21,11 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9002 (2026-07-08)
+
+* refactor: Moved GIS data files from BCGcalc package to BCGcalc_ORWA
+    + Load in server file before need
+
 # BCGcalc 2.2.0.9001 (2026-07-07)
 
 * refactor: Update Assign Index Name/Class text on File Builder section of Shiny

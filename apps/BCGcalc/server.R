@@ -1247,6 +1247,9 @@ shinyServer(function(input, output) {
    
       # verified Lat and Long above
 
+      #20260708, moved file from BCGcalc to BCGcalc_ORWA
+      load(file.path("data", "data_GIS_eco3_orwa.rda"))
+      
       # Calc Ecoregions
       df_eco3 <- MazamaSpatialUtils::getSpatialData(df_sites[, sel_col_lon]
                                                     , df_sites[, sel_col_lat]

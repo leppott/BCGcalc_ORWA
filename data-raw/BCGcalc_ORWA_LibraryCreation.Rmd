@@ -68,30 +68,30 @@ file.copy("NEWS.md", "NEWS", overwrite = TRUE)
 file.remove("NEWS.html")
 #file.remove("NEWS.md")
 #
-myPkg <- "BCGcalc_ORWA"
-# Load Library
-library(devtools)
+# myPkg <- "BCGcalc_ORWA"
+# # Load Library
+# library(devtools)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Create Package
 # create(myPkg)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Document, Install, and Reload Library
-## Generate Documentation
-#setwd(paste0("./",myPkg))  # will fail as already in this directory
-devtools::document()
-## Install New Package (locally)
-# setwd("..") # return to root directory first
-devtools::install(".", 
-                  quick=FALSE, 
-                  reload=TRUE, 
-                  build_vignettes = TRUE)
-
-## Reload library
-library(myPkg, character.only = TRUE)
-# change wd back to package
-# setwd(paste0("./",myPkg))
+# # Document, Install, and Reload Library
+# ## Generate Documentation
+# #setwd(paste0("./",myPkg))  # will fail as already in this directory
+# devtools::document()
+# ## Install New Package (locally)
+# # setwd("..") # return to root directory first
+# devtools::install(".", 
+#                   quick=FALSE, 
+#                   reload=TRUE, 
+#                   build_vignettes = TRUE)
+# 
+# ## Reload library
+# library(myPkg, character.only = TRUE)
+# # change wd back to package
+# # setwd(paste0("./",myPkg))
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 
