@@ -21,6 +21,16 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9003 (2026-07-10)
+
+* refactor: Change order of projects in taxa translate
+    + Move Statewide to first
+    + Modify BioMonTools_SupportFiles picklist for ORWA
+* refactor: Sidebar Calculation
+    + Change order of projects, move Statewide to first
+    + Add "older" to MariNW
+    + Hide Fuzzy
+
 # BCGcalc 2.2.0.9002 (2026-07-08)
 
 * refactor: Moved GIS data files from BCGcalc package to BCGcalc_ORWA

@@ -1,11 +1,21 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-07-08 15:02:50.351557
+2026-07-10 12:16:43.801104
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-07-08 15:02:50.373322
+    #> Last Update: 2026-07-10 12:16:43.822832
+
+# BCGcalc 2.2.0.9003 (2026-07-10)
+
+- refactor: Change order of projects in taxa translate
+  - Move Statewide to first
+  - Modify BioMonTools_SupportFiles picklist for ORWA
+- refactor: Sidebar Calculation
+  - Change order of projects, move Statewide to first
+  - Add “older” to MariNW
+  - Hide Fuzzy
 
 # BCGcalc 2.2.0.9002 (2026-07-08)
 

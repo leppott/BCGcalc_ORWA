@@ -46,11 +46,11 @@ function(id) {
                  # , menuSubItem("BCG Models, orig"
                  #               , tabName = "tab_calc_bcg"
                  #               , icon = icon("award"))
-                 , menuSubItem("BCG Models, MariNW"
-                               , tabName = "tab_calc_bcg_marinw"
-                               , icon = icon("award"))
                  , menuSubItem("BCG Models, Statewide"
                                , tabName = "tab_calc_bcg_statewide"
+                               , icon = icon("award"))
+                 , menuSubItem("(older) BCG Models, MariNW"
+                               , tabName = "tab_calc_bcg_marinw"
                                , icon = icon("award"))
                  , menuSubItem("MTTI"
                                , tabName = "tab_calc_mtti"
@@ -61,9 +61,9 @@ function(id) {
                  , menuSubItem("Fish Thermal Class [DRAFT]"
                                , tabName = "tab_calc_fishthermalclass"
                                , icon = icon("fish"))
-                 , menuSubItem("Fuzzy Set Temperature Model [DRAFT]"
-                               , tabName = "tab_calc_thermalfuzzy"
-                               , icon = icon("square-check"))
+                 # , menuSubItem("Fuzzy Set Temperature Model [DRAFT]"
+                 #               , tabName = "tab_calc_thermalfuzzy"
+                 #               , icon = icon("square-check"))
                  , menuSubItem("BioDiversity Index [DRAFT]"
                                , tabName = "tab_calc_bdi"
                                , icon = icon("flask"))
