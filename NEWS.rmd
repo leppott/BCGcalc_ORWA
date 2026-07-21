@@ -21,6 +21,13 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9004 (2026-07-21)
+
+* refactor: Add BCG_3metmemb_xtab_METRICSORT.csv to output
+    + Add to three places in server.R
+    + Modify file prefix
+* refactor: Update ShinyApps.io prep code
+
 # BCGcalc 2.2.0.9003 (2026-07-10)
 
 * refactor: Change order of projects in taxa translate

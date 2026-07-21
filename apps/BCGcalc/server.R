@@ -2701,8 +2701,46 @@ shinyServer(function(input, output) {
       dn_metflags <- path_results_sub
       pn_metflags <- file.path(dn_metflags, fn_metflags)
       write.csv(df_metflags, pn_metflags, row.names = FALSE)
+      
+      #### 8.2 Metmemb xtab -----
+      # 2026-05-20
+      # 2026-05-26, add Metric_Sort
+      # 2026-07-21, Add from LowerBoise 
+      df_metmemb_xtab <- df_results |>
+        # cols to keep
+        dplyr::select(SampleID, BCG_Status2, NumFlags) |>
+        # join tables
+        dplyr::left_join(y = df_metmemb |>
+                           dplyr::select(SAMPLEID,
+                                         INDEX_CLASS,
+                                         METRIC_NAME,
+                                         DESCRIPTION,
+                                         METRIC_VALUE,
+                                         LEVEL,
+                                         MEMBERSHIP,
+                                         METRIC_SORT),
+                         by = dplyr::join_by(SampleID == SAMPLEID)) |>
+        # pivot
+        tidyr::pivot_wider(id_cols = c(INDEX_CLASS,
+                                       SampleID,
+                                       BCG_Status2,
+                                       NumFlags,
+                                       METRIC_SORT,
+                                       METRIC_NAME,
+                                       DESCRIPTION,
+                                       METRIC_VALUE),
+                           names_from = LEVEL,
+                           values_from = MEMBERSHIP,
+                           names_sort = TRUE,
+                           names_prefix = "L") |>
+        dplyr::arrange(SampleID, METRIC_SORT)
+      
+      # save
+      fn_metmemb_xtab <- paste0(fn_abr_save, "3metmemb_xtab_METRICSORT.csv")
+      dn_metmemb_xtab <- path_results_sub
+      pn_metmemb_xtab <- file.path(dn_metmemb_xtab, fn_metmemb_xtab)
+      write.csv(df_metmemb_xtab, pn_metmemb_xtab, row.names = FALSE)
 
-       
       #### Calc, 9, RMD----
       prog_detail <- "Calculate, Create Report"
       message(paste0("\n", prog_detail))
@@ -3239,6 +3277,45 @@ shinyServer(function(input, output) {
       dn_metflags <- path_results_sub
       pn_metflags <- file.path(dn_metflags, fn_metflags)
       write.csv(df_metflags, pn_metflags, row.names = FALSE)
+      
+      #### 8.2 Metmemb xtab -----
+      # 2026-05-20
+      # 2026-05-26, add Metric_Sort
+      # 2026-07-21, Add from LowerBoise 
+      df_metmemb_xtab <- df_results |>
+        # cols to keep
+        dplyr::select(SampleID, BCG_Status2, NumFlags) |>
+        # join tables
+        dplyr::left_join(y = df_metmemb |>
+                           dplyr::select(SAMPLEID,
+                                         INDEX_CLASS,
+                                         METRIC_NAME,
+                                         DESCRIPTION,
+                                         METRIC_VALUE,
+                                         LEVEL,
+                                         MEMBERSHIP,
+                                         METRIC_SORT),
+                         by = dplyr::join_by(SampleID == SAMPLEID)) |>
+        # pivot
+        tidyr::pivot_wider(id_cols = c(INDEX_CLASS,
+                                       SampleID,
+                                       BCG_Status2,
+                                       NumFlags,
+                                       METRIC_SORT,
+                                       METRIC_NAME,
+                                       DESCRIPTION,
+                                       METRIC_VALUE),
+                           names_from = LEVEL,
+                           values_from = MEMBERSHIP,
+                           names_sort = TRUE,
+                           names_prefix = "L") |>
+        dplyr::arrange(SampleID, METRIC_SORT)
+      
+      # save
+      fn_metmemb_xtab <- paste0(fn_abr_save, "3metmemb_xtab_METRICSORT.csv")
+      dn_metmemb_xtab <- path_results_sub
+      pn_metmemb_xtab <- file.path(dn_metmemb_xtab, fn_metmemb_xtab)
+      write.csv(df_metmemb_xtab, pn_metmemb_xtab, row.names = FALSE)
       
       
       #### Calc, 9, RMD----
@@ -3784,6 +3861,45 @@ shinyServer(function(input, output) {
       dn_metflags <- path_results_sub
       pn_metflags <- file.path(dn_metflags, fn_metflags)
       write.csv(df_metflags, pn_metflags, row.names = FALSE)
+      
+      #### 8.2 Metmemb xtab -----
+      # 2026-05-20
+      # 2026-05-26, add Metric_Sort
+      # 2026-07-21, Add from LowerBoise 
+      df_metmemb_xtab <- df_results |>
+        # cols to keep
+        dplyr::select(SampleID, BCG_Status2, NumFlags) |>
+        # join tables
+        dplyr::left_join(y = df_metmemb |>
+                           dplyr::select(SAMPLEID,
+                                         INDEX_CLASS,
+                                         METRIC_NAME,
+                                         DESCRIPTION,
+                                         METRIC_VALUE,
+                                         LEVEL,
+                                         MEMBERSHIP,
+                                         METRIC_SORT),
+                         by = dplyr::join_by(SampleID == SAMPLEID)) |>
+        # pivot
+        tidyr::pivot_wider(id_cols = c(INDEX_CLASS,
+                                       SampleID,
+                                       BCG_Status2,
+                                       NumFlags,
+                                       METRIC_SORT,
+                                       METRIC_NAME,
+                                       DESCRIPTION,
+                                       METRIC_VALUE),
+                           names_from = LEVEL,
+                           values_from = MEMBERSHIP,
+                           names_sort = TRUE,
+                           names_prefix = "L") |>
+        dplyr::arrange(SampleID, METRIC_SORT)
+      
+      # save
+      fn_metmemb_xtab <- paste0(fn_abr_save, "3metmemb_xtab_METRICSORT.csv")
+      dn_metmemb_xtab <- path_results_sub
+      pn_metmemb_xtab <- file.path(dn_metmemb_xtab, fn_metmemb_xtab)
+      write.csv(df_metmemb_xtab, pn_metmemb_xtab, row.names = FALSE)
       
       
       #### Calc, 9, RMD----

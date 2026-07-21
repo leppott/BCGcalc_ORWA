@@ -1,11 +1,18 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-07-10 12:16:43.801104
+2026-07-21 13:34:52.14436
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-07-10 12:16:43.822832
+    #> Last Update: 2026-07-21 13:34:52.163055
+
+# BCGcalc 2.2.0.9004 (2026-07-21)
+
+- refactor: Add BCG_3metmemb_xtab_METRICSORT.csv to output
+  - Add to three places in server.R
+  - Modify file prefix
+- refactor: Update ShinyApps.io prep code
 
 # BCGcalc 2.2.0.9003 (2026-07-10)
 
