@@ -1,15 +1,19 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-07-30 10:35:04.684203
+2026-07-30 12:22:04.788886
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-07-30 10:35:04.705436
+    #> Last Update: 2026-07-30 12:22:04.809584
+
+# BCGcalc 2.2.0.9006 (2026-07-30)
+
+- refactor: Move unused large example files from BCGcalc package to here
 
 # BCGcalc 2.2.0.9005 (2026-07-30)
 
-- refactor: Move BDVI example data from BCGcalc package to here
+- refactor: Move unused BDVI example data from BCGcalc package to here
 
 # BCGcalc 2.2.0.9004 (2026-07-21)
 
