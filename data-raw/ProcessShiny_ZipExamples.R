@@ -5,11 +5,12 @@
 # Set Working Directory for each file so don't get extra directory structure
 # in the zip file
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 20260731, moved location
 
 
 # Create zip file for each procedure and an overall
 wd_orig <- getwd()
-dn_input <- normalizePath(file.path("inst", "extdata", "examples"))
+dn_input <- normalizePath(file.path("data-raw", "examples"))
 dn_save <- normalizePath(file.path("inst"
                                    , "shiny-examples"
                                    , "BCGcalc"
