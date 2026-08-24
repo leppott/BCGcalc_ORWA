@@ -629,7 +629,9 @@ shinyServer(function(input, output) {
                                                        , col_drop
                                                        , sum_n_taxa_boo
                                                        , sum_n_taxa_col
-                                                       , sum_n_taxa_group_by)
+                                                       , sum_n_taxa_group_by
+                                                       , trim_ws = TRUE
+                                                       , match_caps = TRUE)
      
       ## Munge ----
  

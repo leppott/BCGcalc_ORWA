@@ -21,6 +21,11 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9008 (2026-08-24)
+
+* refactor: Update taxa translate in BioMonTools, Issue #10
+    + Add trim_ws and match_caps parameters
+
 # BCGcalc 2.2.0.9007 (2026-07-31)
 
 * refactor: Move example files from BCGcalc to data-raw 

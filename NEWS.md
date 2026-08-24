@@ -1,11 +1,16 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-07-31 10:14:41.851152
+2026-08-24 10:54:53.257158
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-07-31 10:14:41.961378
+    #> Last Update: 2026-08-24 10:54:53.288769
+
+# BCGcalc 2.2.0.9008 (2026-08-24)
+
+- refactor: Update taxa translate in BioMonTools, Issue \#10
+  - Add trim_ws and match_caps parameters
 
 # BCGcalc 2.2.0.9007 (2026-07-31)
 
