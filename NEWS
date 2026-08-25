@@ -1,11 +1,15 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-08-24 10:54:53.257158
+2026-08-25 14:22:37.470936
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-08-24 10:54:53.288769
+    #> Last Update: 2026-08-25 14:22:37.52665
+
+# BCGcalc 2.2.0.9009 (2026-08-25)
+
+- refactor: Taxa translate CAPS modified to single column, Issue \#11
 
 # BCGcalc 2.2.0.9008 (2026-08-24)
 
