@@ -2698,6 +2698,12 @@ shinyServer(function(input, output) {
         
       }## IF ~ check for matching index name and class
       
+      # Mofidy RESULTS column order, 20260521 (Boise)
+      # 20260825, ORWA
+      df_results <- df_results |>
+        dplyr::relocate(BCG_Status,
+                        BCG_Status2,
+                        .before = Primary_BCG_Level)
       
       # Save, Flags Summary
       fn_levflags <- paste0(fn_abr_save, "6levflags.csv")
@@ -3274,6 +3280,12 @@ shinyServer(function(input, output) {
         
       }## IF ~ check for matching index name and class
       
+      # Mofidy RESULTS column order, 20260521 (Boise)
+      # 20260825, ORWA
+      df_results <- df_results |>
+        dplyr::relocate(BCG_Status,
+                        BCG_Status2,
+                        .before = Primary_BCG_Level)
       
       # Save, Flags Summary
       fn_levflags <- paste0(fn_abr_save, "6levflags.csv")
@@ -3858,6 +3870,13 @@ shinyServer(function(input, output) {
         
       }## IF ~ check for matching index name and class
       
+      
+      # Mofidy RESULTS column order, 20260521 (Boise)
+      # 20260825, ORWA
+      df_results <- df_results |>
+        dplyr::relocate(BCG_Status,
+                        BCG_Status2,
+                        .before = Primary_BCG_Level)
       
       # Save, Flags Summary
       fn_levflags <- paste0(fn_abr_save, "6levflags.csv")

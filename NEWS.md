@@ -1,11 +1,16 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-08-25 14:22:37.470936
+2026-08-25 17:19:08.648105
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-08-25 14:22:37.52665
+    #> Last Update: 2026-08-25 17:19:08.665581
+
+# BCGcalc 2.2.0.9010 (2026-08-25)
+
+- refactor: Modify order of columns in BCG Results file, Issue \#12
+  - Add in three places in code
 
 # BCGcalc 2.2.0.9009 (2026-08-25)
 
