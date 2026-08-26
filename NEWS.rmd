@@ -21,6 +21,10 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9011 (2026-08-26)
+
+* refactor: Modify "BCG_3metmemb_xtab_METRICSORT.csv" for alternate rules, Issue #13
+
 # BCGcalc 2.2.0.9010 (2026-08-25)
 
 * refactor: Modify order of columns in BCG Results file, Issue #12

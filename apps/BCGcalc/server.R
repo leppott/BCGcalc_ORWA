@@ -2739,7 +2739,9 @@ shinyServer(function(input, output) {
                                          METRIC_VALUE,
                                          LEVEL,
                                          MEMBERSHIP,
-                                         METRIC_SORT),
+                                         METRIC_SORT)  |>
+                           # account for Rule 1 and 2 duplicates
+                           distinct(),
                          by = dplyr::join_by(SampleID == SAMPLEID)) |>
         # pivot
         tidyr::pivot_wider(id_cols = c(INDEX_CLASS,
@@ -3321,7 +3323,9 @@ shinyServer(function(input, output) {
                                          METRIC_VALUE,
                                          LEVEL,
                                          MEMBERSHIP,
-                                         METRIC_SORT),
+                                         METRIC_SORT)  |>
+                           # account for Rule 1 and 2 duplicates
+                           distinct(),
                          by = dplyr::join_by(SampleID == SAMPLEID)) |>
         # pivot
         tidyr::pivot_wider(id_cols = c(INDEX_CLASS,
@@ -3912,7 +3916,9 @@ shinyServer(function(input, output) {
                                          METRIC_VALUE,
                                          LEVEL,
                                          MEMBERSHIP,
-                                         METRIC_SORT),
+                                         METRIC_SORT)  |>
+                           # account for Rule 1 and 2 duplicates
+                           distinct(),
                          by = dplyr::join_by(SampleID == SAMPLEID)) |>
         # pivot
         tidyr::pivot_wider(id_cols = c(INDEX_CLASS,
