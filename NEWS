@@ -1,11 +1,17 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-08-26 10:46:17.638042
+2026-08-26 12:50:31.503858
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-08-26 10:46:17.656149
+    #> Last Update: 2026-08-26 12:50:31.525076
+
+# BCGcalc 2.2.0.9012 (2026-08-26)
+
+- refactor: Modify “BCG_3metmemb_xtab_METRICSORT.csv” for alternate
+  rules, Issue \#13
+  - Add package to distinct function call
 
 # BCGcalc 2.2.0.9011 (2026-08-26)
 

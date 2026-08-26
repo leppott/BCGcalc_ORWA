@@ -21,6 +21,11 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9012 (2026-08-26)
+
+* refactor: Modify "BCG_3metmemb_xtab_METRICSORT.csv" for alternate rules, Issue #13
+    + Add package to distinct function call
+
 # BCGcalc 2.2.0.9011 (2026-08-26)
 
 * refactor: Modify "BCG_3metmemb_xtab_METRICSORT.csv" for alternate rules, Issue #13
