@@ -21,6 +21,16 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9013 (2026-10-29)
+
+* refactor: Hide unused (not remove) unused/unwanted tabs
+    + Reports
+    + Relevant Resources
+* refactor: Hide unused option in drop down by filtering picklist in global.R
+    + File Builder - Translate - Calculation
+        - Fuzzy Set Thermal model
+        - BSTI
+
 # BCGcalc 2.2.0.9012 (2026-08-26)
 
 * refactor: Modify "BCG_3metmemb_xtab_METRICSORT.csv" for alternate rules, Issue #13

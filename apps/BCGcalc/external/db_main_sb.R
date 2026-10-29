@@ -92,19 +92,19 @@ function(id) {
       , menuItem(text = "Map"
                  , tabName = "tab_map"
                  , icon = icon("map"))## menuItem ~ Map
-      , menuItem(text = "Reports"
-                 , icon = icon("clipboard-check")
-                 , menuSubItem("Single Site"
-                               , tabName = "tab_rep_single"
-                               , icon = icon("pen")
-                               )
-                 # , menuSubItem("Multiple Sites"
-                 #               , tabName = "tab_rep_multi"
-                 #               , icon = icon("pen-to-square"))
-                 )## menuItem ~ Reports ~ END
-      , menuItem(text = "Relevant Resources"
-                 , tabName = "tab_resources"
-                 , icon = icon("book"))
+      # , menuItem(text = "Reports"
+      #            , icon = icon("clipboard-check")
+      #            , menuSubItem("Single Site"
+      #                          , tabName = "tab_rep_single"
+      #                          , icon = icon("pen")
+      #                          )
+      #            # , menuSubItem("Multiple Sites"
+      #            #               , tabName = "tab_rep_multi"
+      #            #               , icon = icon("pen-to-square"))
+      #            )## menuItem ~ Reports ~ END
+      # , menuItem(text = "Relevant Resources"
+      #            , tabName = "tab_resources"
+      #            , icon = icon("book"))
       , menuItem(text = "Troubleshooting"
                  , tabName = "tab_troubleshoot"
                  , icon = icon("circle-info"))

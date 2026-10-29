@@ -1,7 +1,7 @@
 # Shiny Global File
 
 # Version ----
-pkg_version <- "2.2.0.9012"
+pkg_version <- "2.2.0.9013"
 
 # Packages----
 # nolint start
@@ -192,7 +192,12 @@ url_taxa_official_pick <- file.path(url_bmt_base
 httr::GET(url_taxa_official_pick
     , httr::write_disk(temp_taxa_official_pick <- tempfile(fileext = ".csv")))
 
-df_pick_taxoff <- read.csv(temp_taxa_official_pick)
+# 20261029, remove Fuzzy Set Thermal and BSTI 
+df_pick_taxoff <- read.csv(temp_taxa_official_pick) |>
+  dplyr::filter(project != "Fuzzy Set Thermal model (Oregon/Washington)") |>
+  dplyr::filter(project != "BSTI (Oregon/Washington)") |>
+  as.data.frame()
+  
 
 # BMT, Index Class ----
 url_indexclass_crit <- file.path(url_bmt_base

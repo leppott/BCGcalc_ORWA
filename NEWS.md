@@ -1,11 +1,22 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-08-26 12:50:31.503858
+2026-10-29 11:29:30.981182
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-08-26 12:50:31.525076
+    #> Last Update: 2026-10-29 11:29:31.073012
+
+# BCGcalc 2.2.0.9013 (2026-10-29)
+
+- refactor: Hide unused (not remove) unused/unwanted tabs
+  - Reports
+  - Relevant Resources
+- refactor: Hide unused option in drop down by filtering picklist in
+  global.R
+  - File Builder - Translate - Calculation
+    - Fuzzy Set Thermal model
+    - BSTI
 
 # BCGcalc 2.2.0.9012 (2026-08-26)
 
