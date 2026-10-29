@@ -1,11 +1,19 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-10-29 11:29:30.981182
+2026-10-29 13:37:50.195467
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-10-29 11:29:31.073012
+    #> Last Update: 2026-10-29 13:37:50.482821
+
+# BCGcalc 2.2.0.9014 (2026-10-29)
+
+- refactor: Update text on troubleshooting tab
+- refactor: Ensure taxa translate and calculations going to same folder
+  - global.R missing dn_files_bcg_statewide
+  - server.R, taxa translate
+  - server.R, calculation
 
 # BCGcalc 2.2.0.9013 (2026-10-29)
 

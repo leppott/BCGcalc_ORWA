@@ -1,7 +1,7 @@
 # Shiny Global File
 
 # Version ----
-pkg_version <- "2.2.0.9013"
+pkg_version <- "2.2.0.9014"
 
 # Packages----
 # nolint start
@@ -149,6 +149,7 @@ dn_files_input  <- "_user_input"
 dn_files_ref    <- "reference"
 dn_files_fb     <- paste(abr_results, abr_filebuilder, sep = "_")
 dn_files_bcg    <- paste(abr_results, abr_bcg, sep = "_")
+dn_files_bcg_statewide <- paste(abr_results, abr_bcg_statewide, sep = "_")
 dn_files_bcg_marinw <- paste(abr_results, abr_bcg_marinw, sep = "_")
 dn_files_tmet   <- paste(abr_results, abr_tmet, sep = "_")
 dn_files_fuzzy  <- paste(abr_results, abr_fuzzy, sep = "_")

@@ -21,6 +21,14 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9014 (2026-10-29)
+
+* refactor: Update text on troubleshooting tab
+* refactor: Ensure taxa translate and calculations going to same folder
+    + global.R missing dn_files_bcg_statewide
+    + server.R, taxa translate
+    + server.R, calculation
+
 # BCGcalc 2.2.0.9013 (2026-10-29)
 
 * refactor: Hide unused (not remove) unused/unwanted tabs
