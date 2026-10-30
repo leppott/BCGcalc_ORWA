@@ -21,6 +21,10 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9017 (2026-10-30)
+
+* refactor: Redesign About tab with four subtabs, Issue #14
+
 # BCGcalc 2.2.0.9016 (2026-10-30)
 
 * refactor: Remove contact info from Calc - Fish Thermal Class, Issue #15

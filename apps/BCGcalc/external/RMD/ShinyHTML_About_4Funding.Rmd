@@ -1,0 +1,23 @@
+---
+title: "Funding"
+date: "2026-10-30"
+output: html_fragment
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE
+                      , results = 'asis'
+                      , warning = FALSE
+                      , message = FALSE)
+```
+
+Development of these tools was funded by the United States Environmental 
+Protection Agency (EPA) (lead EPA scientists: Susan Jackson and Britta 
+Bierwagen).
+
+---
+
+*Last updated 2026-10-30*

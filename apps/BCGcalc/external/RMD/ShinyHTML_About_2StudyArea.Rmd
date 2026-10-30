@@ -1,0 +1,29 @@
+---
+title: "Study Area"
+date: "2026-10-30"
+output: html_fragment
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE
+                      , results = 'asis'
+                      , warning = FALSE
+                      , message = FALSE)
+```
+
+The tools were calibrated for small to mid-order freshwater wadeable streams in
+Oregon and Washington. The MaritimeNW BCG and BioDiversity Index were calibrated
+for the Pacific Maritime Region (western ecoregions only, minus the Klamath). 
+The rest provide statewide coverage. The map below shows the study area overlaid
+with the statewide BCG classification scheme.
+
+```{r, echo=FALSE, out.width="50%", fig.cap="Figure 1. Statewide BCG classification of Oregon and Washington."}
+knitr::include_graphics("images/StudyArea_MapStatewideBCGclass.jpg")
+```
+
+---
+
+*Last updated 2026-10-30*

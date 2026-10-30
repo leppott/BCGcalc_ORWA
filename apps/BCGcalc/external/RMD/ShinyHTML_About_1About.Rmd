@@ -1,0 +1,70 @@
+---
+title: "About"
+date: "2026-10-30"
+output: html_fragment
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE
+                      , results = 'asis'
+                      , warning = FALSE
+                      , message = FALSE)
+```
+
+This website provides free tools (see table below) for calculating Biological
+Condition Gradient (BCG) level assignments, BCG input and flag metrics,
+temperature-related outputs and a biodiversity index for macroinvertebrate
+assemblages in freshwater wadeable streams in Oregon and Washington. At the 
+bottom of this page, we included a brief primer on the BCG along with links to
+more detailed resources.
+
+For those who prefer to use R instead of this online calculator, the BCG and
+thermal preference calculations are carried out by the 
+<a href="https://CRAN.R-project.org/package=BCGcalc" target="_blank">BCGcalc</a>
+ and 
+<a href="https://CRAN.R-project.org/package=BioMonTools" target="_blank">BioMonTools</a>
+R packages, which are available on GitHub and were developed by Erik W. Leppo 
+from Tetra Tech (Erik.Leppo@tetratech.com). If using the R code instead of the
+Shiny app, you won’t need internet access if you have R installed on your 
+computer and have downloaded all the necessary packages.
+
+```{r}
+# data
+dn_shiny <- file.path("apps", "BCGcalc", "external", "RMD")
+df_table <- readxl::read_xlsx(
+  file.path("files",
+            "About_CalculationTypes_20261030_mod.xlsx"))
+# display
+knitr::kable(df_table)
+```
+
+## What is the Biological Condition Gradient
+![Figure 2. The Biological Condition Gradient (BCG), modified from Davies and Jackson 2006. The BCG was developed to serve as a scientific framework to synthesize expert knowledge with empirical observations and develop testable hypotheses on the response of aquatic biota to increasing levels of stress.](images/About_Fig2_BCG.jpg)
+
+The Biological Condition Gradient (BCG) model is a conceptual model describing 
+how ecological attributes change in response to increasing levels of 
+human-caused stress. The BCG has a universal scoring scale with six levels of
+biological condition, ranging from observable biological conditions found at no
+or low levels of stressors (level 1) to those found at high levels of stressors
+(level 6). Narratives for each BCG level are shown in the figure above. The 
+model is calibrated using expert elicitation. Biologists work collaboratively 
+to reach consensus on assigning biological samples to BCG levels. Their ratings
+and rationale are then used to calibrate a quantitative model. Model performance
+is judged based on how well the model matches the expert BCG level assignments.
+
+### Additional resources
+
+Synopsis: The Biological Condition Gradient (BCG) - A Model for Interpreting
+Anthropogenic Stress on the Aquatic Environment
+<a href="https://www.epa.gov/sites/default/files/2021-03/documents/bcg-flyer-2021.pdf" target="_blank">Link</a> 
+
+A Practitioner’s Guide to the Biological Condition Gradient: A Framework to
+Describe Incremental Change in Aquatic Ecosystems
+<a href="https://www.epa.gov/sites/default/files/2016-02/documents/bcg-practioners-guide-report.pdf" target="_blank">Link</a> 
+
+---
+
+*Last updated 2026-10-30*
