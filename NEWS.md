@@ -1,11 +1,16 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-10-30 10:13:04.798776
+2026-10-30 10:17:45.618758
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-10-30 10:13:04.820498
+    #> Last Update: 2026-10-30 10:17:45.638
+
+# BCGcalc 2.2.0.9016 (2026-10-30)
+
+- refactor: Remove contact info from Calc - Fish Thermal Class, Issue
+  \#15
 
 # BCGcalc 2.2.0.9015 (2026-10-30)
 

@@ -1,6 +1,6 @@
 ---
 title: "Calculation, Fish Thermal Class"
-date: "2024-07-03"
+date: "2026-10-30"
 output: html_fragment
 editor_options: 
   markdown: 
@@ -45,10 +45,6 @@ folder must all be located at the same file system level. The R code creates a
 Write up, R code and other accompanying files
 [[ZIP]](links/FishThermalClass_20240619.zip)
 
-Questions or problems? Contact Mark Fernandez (Mark.Fernandez@tetratech.com) 
-and Jen Stamp (Jen.Stamp@tetratech.com)
-
-
 ---
 
-*Last updated 2024-07-03*
+*Last updated 2026-10-30*
