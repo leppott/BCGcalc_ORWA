@@ -14,8 +14,10 @@ function(id) {
     , sidebarMenu(id = id
       , menuItem(text = "About"
                , tabName = "tab_about"
-               , icon = icon("house")
-               )## menuItem ~ About ~ END
+               , icon = icon("house"))## menuItem ~ About ~ END
+      , menuItem(text = "Instructions"
+                 , tabName = "tab_instruct"
+                 , icon = icon("person-chalkboard"))
       , menuItem(text = "Import Files"
                  , tabName = "tab_import"
                  , icon = icon("file-arrow-up")

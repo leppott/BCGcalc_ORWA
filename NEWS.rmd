@@ -21,6 +21,10 @@ knitr::opts_chunk$set(
 cat(paste0("Last Update: ",Sys.time()))
 ```
 
+# BCGcalc 2.2.0.9015 (2026-10-30)
+
+* refactor: Add Instructions tab and menu item, Issue #17
+
 # BCGcalc 2.2.0.9014 (2026-10-29)
 
 * refactor: Update text on troubleshooting tab

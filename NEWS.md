@@ -1,11 +1,15 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-10-29 13:37:50.195467
+2026-10-30 10:13:04.798776
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-10-29 13:37:50.482821
+    #> Last Update: 2026-10-30 10:13:04.820498
+
+# BCGcalc 2.2.0.9015 (2026-10-30)
+
+- refactor: Add Instructions tab and menu item, Issue \#17
 
 # BCGcalc 2.2.0.9014 (2026-10-29)
 
