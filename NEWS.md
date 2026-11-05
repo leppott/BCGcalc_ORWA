@@ -1,11 +1,15 @@
 BCGcalc_ORWA-NEWS
 ================
 <Erik.Leppo@tetratech.com>
-2026-10-30 15:41:25.771332
+2026-11-05 17:01:43.548173
 
 <!-- NEWS.md is generated from NEWS.Rmd. Please edit that file -->
 
-    #> Last Update: 2026-10-30 15:41:25.812809
+    #> Last Update: 2026-11-05 17:01:43.5753
+
+# BCGcalc 2.2.0.9019 (2026-11-05)
+
+- fix: Update base layer in map, Issue \#21
 
 # BCGcalc 2.2.0.9018 (2026-10-30)
 

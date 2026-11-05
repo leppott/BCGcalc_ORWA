@@ -5167,7 +5167,7 @@ shinyServer(function(input, output) {
        df_bugs_met <- dplyr::rename(df_bugs_met, "TOLVAL2" = "Optima")
        # NONTARGET
      }## IF ~ input$MTTI_OTU
-    
+ 
       # Calc Metrics (MTTI)
       df_met <- BioMonTools::metric.values(df_bugs_met
                                            , "bugs"
@@ -5786,8 +5786,8 @@ shinyServer(function(input, output) {
     leaflet(data = df_map) %>%
       # Groups, Base
       # addTiles(group="OSM (default)") %>%  #default tile too cluttered
-      addProviderTiles("CartoDB.Positron"
-                       , group = "Positron") %>%
+      addProviderTiles(providers$Esri.WorldGrayCanvas
+                       , group = "ESRI Gray") %>%
       addProviderTiles(providers$OpenStreetMap
                        , group = "Open Street Map") %>%
       addProviderTiles(providers$Esri.WorldImagery
@@ -5837,7 +5837,7 @@ shinyServer(function(input, output) {
       #           , labels = c("Stations", "CB Outline")
       #           , values = NA) %>%
       # Layers, Control
-      addLayersControl(baseGroups = c("Positron"
+      addLayersControl(baseGroups = c("ESRI Gray"
                                       , "Open Street Map"
                                       , "ESRI World Imagery"
                                       # , "USGS Imagery"
@@ -6536,7 +6536,7 @@ shinyServer(function(input, output) {
                 , values = NA
                 , title = leg_title) %>%
       # Layers, Control
-      addLayersControl(baseGroups = c("Positron"
+      addLayersControl(baseGroups = c(""
                                       , "Open Street Map"
                                       , "ESRI World Imagery")
                        , overlayGroups = c("Samples"
